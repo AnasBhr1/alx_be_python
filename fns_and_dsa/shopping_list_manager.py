@@ -1,4 +1,7 @@
 def display_menu():
+    """
+    Displays the menu options for the shopping list manager.
+    """
     print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
