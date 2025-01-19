@@ -1,5 +1,3 @@
-# programming_paradigm/robust_division_calculator.py
-
 def safe_divide(numerator, denominator):
     """
     Safely performs division, handling errors like division by zero
@@ -16,7 +14,7 @@ def safe_divide(numerator, denominator):
         # Perform division
         if denom == 0:
             return "Error: Cannot divide by zero."
-        return f"The result of the division is {num / denom:.2f}"
+        return f"The result of the division is {num / denom:.1f}".rstrip('0').rstrip('.')
 
     except ValueError:
         return "Error: Please enter numeric values only."
